@@ -56,3 +56,9 @@ button {
     box-shadow: 2px 2px 2px black;
     padding: 5px;
 }
+
+.homelogo-form {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}

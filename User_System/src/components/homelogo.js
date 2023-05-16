@@ -22,7 +22,7 @@ function Homelogo() {
       <div className="homelogo-contact-container">
         <div className="homelogo-contact">
           <h4>Contact Us</h4>
-          <form>
+          <form className="homelogo-form">
             <input placeholder="Enter Fullname" type="text" disabled></input>
             <input placeholder="Enter Email" type="email" disabled></input>
             <input
