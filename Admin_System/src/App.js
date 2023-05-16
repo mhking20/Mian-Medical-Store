@@ -2,6 +2,7 @@ import React from 'react'
 import {createBrowserRouter , RouterProvider} from "react-router-dom"
 import Login from './components/login'
 import Home from './components/home'
+import "./App.css"
 
 function App() {
 
