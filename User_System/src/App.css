@@ -1,38 +1,21 @@
 .underline {
-    padding: 3px;
-    background-color: aqua;
-}
-
-th {
-    padding: 10px;
-    margin : 20px;
-}
-
-td {
-    padding : 10px
-}
-
-.textsm {
-    font-size: x-large;
-}
-
-.alert {
-    margin-top: 20px;
+    background-color: rgb(51, 51, 139);
     padding: 5px;
-    text-align: center;
+    width: 20%;
+    margin: auto;
 }
 
-.bg-App{
-    background-image: linear-gradient(violet , indigo);
+img {
+    margin: 20px;
 }
 
-.text-App{
-    color: rgb(110, 3, 3);
+.icon {
+    cursor: pointer;
+    color: aqua;
+    margin: 10px;
 }
 
-@media only screen and (max-width : 400px){
-    .textsm{
-        font-size: medium;
-    }
+h1 h2 h3 h4 h5 h6 {
+    margin : 0%;
+    padding: 0%;
 }
-
