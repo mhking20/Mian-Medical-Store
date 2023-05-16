@@ -1,0 +1,21 @@
+.login-form {
+    background-color: rgb(85, 85, 189);
+    width: 25vw;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    left: 35vw;
+    top:20vh
+}
+
+.login-header {
+    color: red;
+}
+
+.login-btn {
+    background-color: blue;
+    color: white
+}
