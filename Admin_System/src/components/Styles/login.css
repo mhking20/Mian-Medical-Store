@@ -20,3 +20,25 @@
     background-color: blue;
     color: white
 }
+
+
+@media only screen and (max-width : 1050px){
+    .login-form{
+        width: 40vw;
+        left: 25vw;
+        top: 18vh;
+}}
+@media only screen and (max-width : 630px){
+    .login-form{
+        width: 60vw;
+        left: 15vw;
+        top: 15vh;
+    }
+}
+@media only screen and (max-width : 400px){
+    .login-form{
+        width: 100%;
+        left: 0vw;
+        top: 15vh;
+    }
+}
