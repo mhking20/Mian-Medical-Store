@@ -35,3 +35,19 @@ button {
     background-color: blue;
     color: white;
 }
+
+
+body { 
+    height: 100vh;
+    background-image: url("https://wallpaper.dog/large/20378251.jpg");
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.7);
+}

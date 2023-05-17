@@ -1,8 +1,5 @@
 import React from "react";
 import "./Styles/home.css";
-import panadol from "./images/panadol.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGreaterThan, faLessThan } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
@@ -34,139 +31,22 @@ const Content = () => {
   return (
     <div className="home-container">
       <div>
-        <h1 className="home-header">Available Products</h1>
-        <p className="underline"></p>
+        <h1 className="home-header">Dashboard</h1>
       </div>
-      <div class="add-item-btn">
-        <button className="blue-button" style={padding}>Add New Products</button>
-      </div>
-      <div className="home-items-container">
-        <div className="home-item">
-          <h2>Panadol</h2>
-          <hr />
-          <img src={panadol} alt="img" height="100px" width="100px" />
-          <div className="home-item-info">
-            <h4>Price = 10 $</h4>
-            <h4>InStock = 25 items</h4>
-            <div className="home-icon-container">
-              <FontAwesomeIcon
-                icon={faLessThan}
-                className="icon"
-                style={icon}
-              />
-              <h4 className="home-item-counter">0</h4>
-              <FontAwesomeIcon
-                icon={faGreaterThan}
-                className="icon"
-                style={icon}
-              />
-            </div>
-            <button className="blue-button">Add To Cart</button>
-          </div>
+      <hr />
+      <div className="home-box-container">
+        <div className="home-box">
+          <h3>Available Products</h3>
         </div>
-        <div className="home-item">
-          <h2>Panadol</h2>
-          <hr />
-          <img src={panadol} alt="img" height="100px" width="100px" />
-          <div className="home-item-info">
-            <h4>Price = 10 $</h4>
-            <h4>InStock = 25 items</h4>
-            <div className="home-icon-container">
-              <FontAwesomeIcon
-                icon={faLessThan}
-                className="icon"
-                style={icon}
-              />
-              <h4 className="home-item-counter">0</h4>
-              <FontAwesomeIcon
-                icon={faGreaterThan}
-                className="icon"
-                style={icon}
-              />
-            </div>
-            <button className="blue-button">Add To Cart</button>
-          </div>
+        <div className="home-box">
+          <h3>Orders To Complete</h3>
         </div>
-        <div className="home-item">
-          <h2>Panadol</h2>
-          <hr />
-          <img src={panadol} alt="img" height="100px" width="100px" />
-          <div className="home-item-info">
-            <h4>Price = 10 $</h4>
-            <h4>InStock = 25 items</h4>
-            <div className="home-icon-container">
-              <FontAwesomeIcon
-                icon={faLessThan}
-                className="icon"
-                style={icon}
-              />
-              <h4 className="home-item-counter">0</h4>
-              <FontAwesomeIcon
-                icon={faGreaterThan}
-                className="icon"
-                style={icon}
-              />
-            </div>
-            <button className="blue-button">Add To Cart</button>
-          </div>
-        </div>
-        <div className="home-item">
-          <h2>Panadol</h2>
-          <hr />
-          <img src={panadol} alt="img" height="100px" width="100px" />
-          <div className="home-item-info">
-            <h4>Price = 10 $</h4>
-            <h4>InStock = 25 items</h4>
-            <div className="home-icon-container">
-              <FontAwesomeIcon
-                icon={faLessThan}
-                className="icon"
-                style={icon}
-              />
-              <h4 className="home-item-counter">0</h4>
-              <FontAwesomeIcon
-                icon={faGreaterThan}
-                className="icon"
-                style={icon}
-              />
-            </div>
-            <button className="blue-button">Add To Cart</button>
-          </div>
-        </div>
-        <div className="home-item">
-          <h2>Panadol</h2>
-          <hr />
-          <img src={panadol} alt="img" height="100px" width="100px" />
-          <div className="home-item-info">
-            <h4>Price = 10 $</h4>
-            <h4>InStock = 25 items</h4>
-            <div className="home-icon-container">
-              <FontAwesomeIcon
-                icon={faLessThan}
-                className="icon"
-                style={icon}
-              />
-              <h4 className="home-item-counter">0</h4>
-              <FontAwesomeIcon
-                icon={faGreaterThan}
-                className="icon"
-                style={icon}
-              />
-            </div>
-            <button className="blue-button">Add To Cart</button>
-          </div>
+        <div className="home-box">
+          <h3>Manage Admins</h3>
         </div>
       </div>
     </div>
   );
 };
 
-const icon = {
-  "margin-left": "20px",
-  "margin-right": "20px",
-};
-
-const padding = {
-  "padding" : "20px"
-}
 export default Home;
