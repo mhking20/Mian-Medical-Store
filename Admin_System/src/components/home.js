@@ -38,13 +38,13 @@ const Content = () => {
       <hr />
       <div className="home-box-container">
         <div className="home-box">
-          <h3>Available Products</h3>
+          <h3>Products</h3>
         </div>
         <div className="home-box">
-          <h3>Orders To Complete</h3>
+          <h3>Orders</h3>
         </div>
         <div className="home-box">
-          <h3>Manage Admins</h3>
+          <h3>Admins</h3>
         </div>
       </div>
     </div>
