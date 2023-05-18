@@ -39,12 +39,24 @@ const Content = () => {
       <div className="home-box-container">
         <div className="home-box">
           <h3>Products</h3>
+          <hr/>
+          <hr/>
+          <h4>Total No Of Products = 7</h4>
+          <button className="blue-button">Manage Products</button>
         </div>
         <div className="home-box">
           <h3>Orders</h3>
+          <hr/>
+          <hr/>
+          <h4>Orders To Delivered = 3</h4>
+          <button className="blue-button">Manage Orders</button>
         </div>
         <div className="home-box">
           <h3>Admins</h3>
+          <hr/>
+          <hr/>
+          <h4>Total No Of Admins = 2</h4>
+          <button className="blue-button">Manage Admins</button>
         </div>
       </div>
     </div>

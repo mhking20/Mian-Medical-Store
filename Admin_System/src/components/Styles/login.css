@@ -18,7 +18,8 @@
 
 .login-btn {
     background-color: blue;
-    color: white
+    color: white;
+    padding: 5px;
 }
 
 
