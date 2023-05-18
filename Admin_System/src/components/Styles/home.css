@@ -23,7 +23,15 @@
 }
 
 
-@media only screen and (max-width : 550px){
+@media only screen and (max-width : 1000px){
+    .home-box-container{
+        gap: 20px;
+    }
+    .home-box {
+        width: 45vw;
+    }
+}
+@media only screen and (max-width : 650px){
     .home-box-container{
         grid-template-columns: auto;
     }
