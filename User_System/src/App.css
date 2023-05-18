@@ -32,7 +32,7 @@ body::before {
     right: 0%;
     content: "";
     background-size: cover;
-    filter: blur(5px);
+    filter: blur(3px);
     z-index: -1;
     background-image: url("https://us.123rf.com/450wm/ufabizphoto/ufabizphoto2010/ufabizphoto201000327/157826734-two-young-caucasian-colleagues-in-white-medical-gown-pharmacists-fulfilling-a-prescription-holding.jpg?ver=6")
 }
