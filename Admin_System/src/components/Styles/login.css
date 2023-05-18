@@ -26,19 +26,19 @@
     .login-form{
         width: 40vw;
         left: 30vw;
-        top: 18vh;
+        top: 25vh;
 }}
 @media only screen and (max-width : 630px){
     .login-form{
         width: 60vw;
         left: 20vw;
-        top: 15vh;
+        top: 25vh;
     }
 }
 @media only screen and (max-width : 400px){
     .login-form{
         width: 100%;
         left: 0vw;
-        top: 15vh;
+        top: 25vh;
     }
 }
