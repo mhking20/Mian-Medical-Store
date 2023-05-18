@@ -30,6 +30,8 @@ const Footer = () => {
 const Content = () => {
   return (
     <div className="home-container">
+      <div className="blur-img">
+      </div>
       <div>
         <h1 className="home-header">Dashboard</h1>
       </div>

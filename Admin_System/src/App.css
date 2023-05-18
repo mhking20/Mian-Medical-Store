@@ -36,18 +36,19 @@ button {
     color: white;
 }
 
-
-body { 
-    height: 100vh;
-    background-image: url("https://wallpaper.dog/large/20378251.jpg");
+body{
+    position: relative;
 }
 
-body::before {
+body::before { 
+    background-image: url("https://wallpaper.dog/large/20378251.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
     content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.7);
+    filter: blur(5px);
 }

@@ -7,8 +7,8 @@
     margin: auto;
     padding: 15px;
     position: absolute;
-    left: 35vw;
-    top:20vh
+    left: 38vw;
+    top:23vh
 }
 
 .login-header {
@@ -31,7 +31,7 @@
 @media only screen and (max-width : 630px){
     .login-form{
         width: 60vw;
-        left: 15vw;
+        left: 20vw;
         top: 15vh;
     }
 }
