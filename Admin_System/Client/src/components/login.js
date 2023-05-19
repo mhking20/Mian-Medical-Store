@@ -9,8 +9,8 @@ function Login() {
         navigate("/home")
     }
   return (
-    <div className='login-form-container'>
-        <form className='login-form' onSubmit={(e) => handleSubmit(e)}>
+    <div className='form-container'>
+        <form className='form' onSubmit={(e) => handleSubmit(e)}>
             <h4 className='login-header'>Restricted Login Page</h4>
             <input type="text" placeholder='Enter Username'></input>
             <input type="password" placeholder="Enter Password"></input>

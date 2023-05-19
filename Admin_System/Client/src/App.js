@@ -5,6 +5,8 @@ import Home from './components/home'
 import Products from './components/products'
 import Orders from './components/orders'
 import Admins from './components/admins'
+import Productform from './components/Productform'
+import Adminform from './components/adminform'
 import "./App.css"
 
 function App() {
@@ -27,8 +29,16 @@ function App() {
       element : <Orders/>
     },
     {
-      path : "/Admins",
+      path : "/admins",
       element : <Admins/>
+    },
+    {
+      path : "/productform",
+      element : <Productform/>
+    },
+    {
+      path : "/adminform",
+      element : <Adminform/>
     }
   ])
   return (
