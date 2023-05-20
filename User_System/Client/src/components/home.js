@@ -33,12 +33,21 @@ const Footer = () => {
 const Content = () => {
   const [array, setarray] = useState([]);
 
+  let mark = false
+
   const el = useRef();
 
   const Products = async () => {
     try {
-      const products = await axios.get("https://mian-medical-store.onrender.com/");
-      let prod = products.data.products;
+      let prod
+      if(mark){
+        const products = await  axios.get("https://mian-medical-store.onrender.com/");
+        prod = products.data.products;
+      }else{
+        const products = await  axios.get("http://localhost:5000");
+        prod = products.data.products;
+      }
+  
       setarray(prod);
       return prod;
     } catch (error) {
