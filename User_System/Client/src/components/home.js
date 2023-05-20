@@ -37,7 +37,7 @@ const Content = () => {
 
   const Products = async () => {
     try {
-      const products = await axios.get("https://mian-medical-store.onrender.com");
+      const products = await axios.get("https://mian-medical-store.onrender.com/");
       let prod = products.data.products;
       setarray(prod);
       return prod;
