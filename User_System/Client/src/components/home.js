@@ -1,7 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./styles/home.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGreaterThan, faLessThan } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 
 function Home() {
@@ -34,7 +32,6 @@ const Content = () => {
   const [array, setarray] = useState([]);
 
   let mark = true;
-  const el = useRef();
 
   const Products = async () => {
     try {
@@ -59,10 +56,6 @@ const Content = () => {
   useEffect(() => {
     Products();
   });
-
-  const handleClick = (e) => {
-      el.current.innerHTML = 5
-  };
 
   return (
     <div className="home-container">
