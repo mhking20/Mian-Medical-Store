@@ -32,7 +32,6 @@ const Footer = () => {
 
 const Content = () => {
   const [array, setarray] = useState([]);
-  const [count, setcount] = useState(0);
 
   let mark = true;
   const el = useRef();
@@ -59,7 +58,7 @@ const Content = () => {
 
   useEffect(() => {
     Products();
-  }, []);
+  });
 
   const handleClick = (e) => {
       el.current.innerHTML = 5
