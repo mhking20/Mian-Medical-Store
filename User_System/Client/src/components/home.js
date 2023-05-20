@@ -80,22 +80,6 @@ const Content = () => {
               <div className="home-item-info">
                 <h4>Price = {item.price} $</h4>
                 <h4>InStock = {item.instock} items</h4>
-                <div className="home-icon-container" data-set-id={item._id}>
-                  <FontAwesomeIcon
-                    icon={faLessThan}
-                    className="icon"
-                    onClick={(e) => handleClick(e)}
-                  />
-
-                  <h4 className="home-item-counter" ref={el}>
-                  0
-                  </h4>
-                  <FontAwesomeIcon
-                    icon={faGreaterThan}
-                    className="icon"
-                    onClick={(e) => handleClick(e)}
-                  />
-                </div>
                 <button className="blue-button">Buy Product</button>
               </div>
             </div>
