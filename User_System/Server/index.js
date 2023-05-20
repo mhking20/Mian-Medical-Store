@@ -3,7 +3,7 @@ const app = express()
 
 const cors = require('cors');
 app.use(cors({
-  origin : ["https://mian-medical-store.netlify.app"],
+  origin : ["https://mian-medical-store.netlify.app" , "http://localhost:3000"],
   methods : ["GET" , "POST" , "DELETE" , "PATCH"]
 }))
 

@@ -32,22 +32,24 @@ const Footer = () => {
 
 const Content = () => {
   const [array, setarray] = useState([]);
+  const [count, setcount] = useState(0);
 
-  let mark = false
-
+  let mark = true;
   const el = useRef();
 
   const Products = async () => {
     try {
-      let prod
-      if(mark){
-        const products = await  axios.get("https://mian-medical-store.onrender.com/");
+      let prod;
+      if (mark) {
+        const products = await axios.get(
+          "https://mian-medical-store.onrender.com/"
+        );
         prod = products.data.products;
-      }else{
-        const products = await  axios.get("http://localhost:5000");
+      } else {
+        const products = await axios.get("http://localhost:5000");
         prod = products.data.products;
       }
-  
+
       setarray(prod);
       return prod;
     } catch (error) {
@@ -59,20 +61,8 @@ const Content = () => {
     Products();
   }, []);
 
-  const handleClick = async (e) => {
-    const nextElement = e.target.nextSibling;
-    const previousElement = e.target.previousSibling;
-    if (nextElement) {
-      if (nextElement.textContent !== "0") {
-        let value = nextElement.textContent;
-        console.log(value--);
-        nextElement.textContent = value--;
-      }
-    } else if (previousElement) {
-      let value = previousElement.textContent;
-      console.log(value++);
-       previousElement.textContent = value++;
-    }
+  const handleClick = (e) => {
+      el.current.innerHTML = 5
   };
 
   return (
@@ -84,11 +74,7 @@ const Content = () => {
       <div className="home-items-container">
         {array.map((item) => {
           return (
-            <div
-              className="home-item"
-              key={item._id}
-              data-set-id={item._id}
-            >
+            <div className="home-item" key={item._id} data-set-id={item._id}>
               <h2>{item.name}</h2>
               <hr />
               <img src={item.image} alt="img" height="100px" width="100px" />
@@ -96,21 +82,20 @@ const Content = () => {
                 <h4>Price = {item.price} $</h4>
                 <h4>InStock = {item.instock} items</h4>
                 <div className="home-icon-container" data-set-id={item._id}>
-                  <button className ="btn-icon" onClick={(e) => handleClick(e)}> 
-                                    <FontAwesomeIcon
+                  <FontAwesomeIcon
                     icon={faLessThan}
                     className="icon"
+                    onClick={(e) => handleClick(e)}
                   />
-                  </button>
 
-                  <h4 className="home-item-counter" ref={el}>{0}</h4>
-  <button  className ="btn-icon"  onClick={(e) => handleClick(e)}>
-                           <FontAwesomeIcon
+                  <h4 className="home-item-counter" ref={el}>
+                  0
+                  </h4>
+                  <FontAwesomeIcon
                     icon={faGreaterThan}
                     className="icon"
+                    onClick={(e) => handleClick(e)}
                   />
-                    </button>
-
                 </div>
                 <button className="blue-button">Buy Product</button>
               </div>
