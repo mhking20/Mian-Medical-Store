@@ -87,17 +87,23 @@ const Content = () => {
                 <h4>Price = {item.price} $</h4>
                 <h4>InStock = {item.instock} items</h4>
                 <div className="home-icon-container" data-set-id={item._id}>
-                  <FontAwesomeIcon
+                  <button>
+                                    <FontAwesomeIcon
                     icon={faLessThan}
                     className="icon"
                     onClick={(e) => handleClick(e)}
                   />
+                  </button>
+
                   <h4 className="home-item-counter" ref={el}>{0}</h4>
-                  <FontAwesomeIcon
+  <button>
+                           <FontAwesomeIcon
                     icon={faGreaterThan}
                     className="icon"
                     onClick={(e) => handleClick(e)}
                   />
+                    </button>
+
                 </div>
                 <button className="blue-button">Buy Product</button>
               </div>
